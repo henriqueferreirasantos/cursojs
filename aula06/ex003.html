@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title><!--comentário html-->
+    <style>
+        body {
+            background-color: rgb(58, 58, 145);/*css*/
+            color: white;
+              font: normal 20pt arial;
+         }
+        h1 {
+            color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+   <h1> olá, mundo </h1>
+   <p>javascript é divertido mesmo</p>
+   <script>
+      /* var n1 = Number.parseInt(window.prompt('digíte um número '))
+       var n2 = Number.parseInt(window.prompt('digíte mais um número '))
+       var n3 = Number(window.prompt('digíte mais um número '))
+       var s = n1+n2+n3
+       window.alert('a soma dos valores é '+String(s))//para conveter um número para string usa string ou s.toString
+        window.alert(`a soma desses valores é igual a ${s}`)*/
+       var n5 = Number.parseFloat(window.prompt('digite um número real '))
+       document.write(`${n5.toFixed(2)}</br>`)
+       document.write(`${n5.toFixed(2).replace('.',',')}</br>`)
+       document.write(`${n5.toLocaleString('pt-BR',{style:'currency',currency:'USD'})}</br>`)
+       document.write(`${n5.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}</br>`)
+       document.write(n5.toLocaleString('pt-BR',{style:'currency',currency:'EUR'}))
+   </script>
+</body>
+</html>
