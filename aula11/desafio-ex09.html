@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>país</title>
+    <style>
+        body{
+            background-color: rgb(6, 90, 6);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando a nacionalidade</h1>
+    Informe o país:<input type="text" name="txtp" id="txtp" >
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar(){
+            var p = document.getElementById('txtp')
+            var res = document.getElementById('res')
+            var pa = (p.value)
+            if(pa === 'brasil'){
+                res.innerHTML = 'Você é Brasileiro ! '
+            }else {
+                res.innerHTML = 'Você é Estrangeiro !'
+            }
+           
+        }
+    </script>
+</body>
+</html>
